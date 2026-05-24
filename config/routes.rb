@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       get '/pricing', to: 'pricing#index'
     end
   end
+
+  match '*path', to: 'application#not_found', via: :all
 end

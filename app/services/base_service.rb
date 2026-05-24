@@ -8,4 +8,8 @@ class BaseService
   def errors
     @errors ||= []
   end
+
+  def upstream_error?
+    @upstream_error ||= false
+  end
 end
